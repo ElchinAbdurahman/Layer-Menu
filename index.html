@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Curtain Effects</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="curtain">
+		<span></span>
+		<span></span>
+		<span></span>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Portfólio</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+		<div class="toggle" onclick="toggle()"></div>
+	</div>
+	<script type="text/javascript">
+		function toggle(){
+			var curtain = document.getElementById('curtain');
+			curtain.classList.toggle('active')
+		}
+	</script>
+</body>
+</html>
